@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ป้าสมรนับตังค์</title>
+<meta name="description" content="แอปจดรายจ่ายค่าของหน้างานจากสลิปและการแจ้งเตือนธนาคาร เก็บข้อมูลไว้ในเครื่อง">
+<style>
+/* Warm paper and dark wood, like ป้า's shop; follows the phone's light or dark setting */
+:root {
+  --paper: #f7efe2;
+  --ink: #3b2a1e;
+  --muted: #7a6150;
+  --rule: #e2d3bd;
+  --link: #9a4a1c;
+  --code: #efe3cf;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #1f1813;
+    --ink: #efe3d3;
+    --muted: #b9a28e;
+    --rule: #3a2d23;
+    --link: #f0a46c;
+    --code: #2c221a;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 17px/1.7 "Noto Sans Thai", "Sarabun", "Leelawadee UI", system-ui, sans-serif;
+}
+
+main {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 3rem 1rem 4rem;
+}
+
+h1 { font-size: 2.1rem; line-height: 1.3; margin: 0 0 0.75rem; }
+h2 { font-size: 1.2rem; margin: 2.5rem 0 0.5rem; }
+
+.kicker { margin: 0 0 0.25rem; color: var(--muted); font-size: 0.95rem; }
+.lede { margin: 0; color: var(--muted); font-size: 1.05rem; }
+
+ul { padding-left: 1.25rem; }
+li { margin: 0.35rem 0; }
+
+a { color: var(--link); text-underline-offset: 0.15em; }
+.kicker a { color: inherit; }
+
+code {
+  background: var(--code);
+  padding: 0.05em 0.35em;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.en { border-top: 1px solid var(--rule); margin-top: 3rem; padding-top: 0.5rem; }
+
+footer {
+  border-top: 1px solid var(--rule);
+  margin-top: 3rem;
+  padding-top: 1rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="kicker">แอป Android</p>
+    <h1>ป้าสมรนับตังค์</h1>
+    <p class="lede">ป้าสมรช่วยจดรายจ่ายค่าของหน้างาน ป้าอ่านสลิปโอนเงินกับการแจ้งเตือนจากแอปธนาคาร แล้วถามแค่ว่าซื้ออะไร ใช้ที่ไหน สิ้นเดือนป้าส่งบัญชีขึ้น Google ชีตให้</p>
+  </header>
+
+  <section>
+    <h2>ป้าทำอะไรบ้าง</h2>
+    <ul>
+      <li>อ่านสลิปในเครื่องและการแจ้งเตือนจากแอปธนาคาร เพื่อรู้ว่าจ่ายไปเท่าไร</li>
+      <li>เก็บรูปบิลไว้คู่กับรายการ</li>
+      <li>ส่งบัญชีแต่ละเดือนขึ้น Google ชีต และเก็บรูปบิลไว้ใน Google Drive ของเจ้าของเครื่อง</li>
+      <li>สำรองข้อมูลไว้ใน Google Drive ของเจ้าของเครื่อง เผื่อเปลี่ยนเครื่อง</li>
+    </ul>
+    <p>ข้อมูลทั้งหมดอยู่ในเครื่องและใน Google Drive ของเจ้าของเครื่องเท่านั้น ไม่มีเซิร์ฟเวอร์ของเราเอง</p>
+  </section>
+
+  <section>
+    <h2>นโยบายความเป็นส่วนตัว</h2>
+    <p><a href="privacy.html">อ่านนโยบายความเป็นส่วนตัว</a> ว่าป้าแตะข้อมูลอะไร และส่งอะไรออกจากเครื่องบ้าง</p>
+  </section>
+
+  <section lang="en" class="en">
+    <h2>In English</h2>
+    <p>ป้าสมรนับตังค์ (Pa Samorn Nubtang) is an Android expense book for building-site purchases. It reads payment slips and bank app notifications on the phone, asks the owner what was bought, and at month end writes the month to the owner's own Google Sheet. Everything stays on the phone and in the owner's own Google Drive. There is no server of ours.</p>
+    <p><a href="privacy.html#en">Privacy policy</a></p>
+  </section>
+
+  <footer>
+    <p>ติดต่อ / Contact: <a href="mailto:chawalit14214@gmail.com">chawalit14214@gmail.com</a></p>
+  </footer>
+</main>
+</body>
+</html>
